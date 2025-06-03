@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terapia com Chatbot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="terapia-container">
+    <div class="ilustracao">
+      <img src="mari.png" alt="Ilustração terapia" />
+    </div>
+
+    <div class="chat-container">
+      <h1 class="titulo">terapIA</h1>
+
+      <div id="chat-box" class="chat-box">
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="message-input" placeholder="Digite sua mensagem terapêutica..." />
+        <button id="send-button">↩</button>
+      </div>
+
+      <div id="connection-status" class="status-offline">Desconectado</div>
+      <div id="controles">
+        <button id="iniciarBtn">Iniciar</button>
+        <button id="encerrarBtn">Encerrar</button>
+      </div>
+
+       <div class="back-to-home-container">
+            <a href="inicio.html" id="backHomeLink"> <button id="backHomeBtn">Voltar ao Início</button>
+            </a>
+          </div>
+      </div> </div> <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
