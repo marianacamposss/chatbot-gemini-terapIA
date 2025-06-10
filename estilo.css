@@ -1,0 +1,77 @@
+ body {
+            font-family: 'Roboto', sans-serif; /* Usando a nova fonte Roboto */
+            background-color: #d9f5f2; /* Cor de fundo suave */
+            display: flex;
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+            min-height: 100vh; /* Ocupa a altura total da tela */
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden; /* Evita barras de rolagem desnecessárias */
+        }
+
+        /* Novo container para a imagem e o botão */
+        .main-content {
+            display: flex; /* Habilita o layout flexbox para imagem e botão */
+            align-items: center; /* Alinha os itens verticalmente no centro */
+            justify-content: center; /* Centraliza a imagem e o botão horizontalmente */
+            gap: 60px; /* Espaço maior entre a imagem e o botão */
+            background-color: #ffffff; /* Fundo branco para o container principal */
+            border-radius: 25px; /* Bordas mais arredondadas */
+            padding: 50px 80px; /* Espaçamento interno generoso */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+            max-width: 90%; /* Garante que o container não seja muito largo */
+            flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+            text-align: center; /* Centraliza o texto em telas menores */
+        }
+
+        /* Estilos para a imagem da Mariana */
+        img {
+            width: 300px; /* Tamanho da imagem um pouco maior */
+            height: auto;
+            border-radius: 50%; /* Deixa a imagem circular */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+            transition: transform 0.3s ease; /* Efeito de transição suave */
+        }
+
+        img:hover {
+            transform: scale(1.08); /* Aumenta a imagem ligeiramente ao passar o mouse */
+        }
+
+        /* Estilos para o botão */
+        button {
+            font-family: 'Roboto', sans-serif; /* Usa a nova fonte Roboto */
+            padding: 18px 45px; /* Botão maior e mais espaçado */
+            font-size: 1.4em; /* Fonte maior no botão */
+            background-color: #62c9bd; /* Cor vibrante */
+            color: white;
+            border: none;
+            border-radius: 40px; /* Botão mais arredondado */
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos de transição */
+            letter-spacing: 0.5px; /* Pequeno espaçamento entre as letras */
+            font-weight: 700; /* Negrito para o texto do botão */
+        }
+
+        button:hover {
+            background-color: #4ea89e; /* Escurece ao passar o mouse */
+            transform: translateY(-5px); /* Efeito de "levantar" */
+        }
+
+        /* Media Queries para responsividade em telas menores */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Empilha a imagem e o botão em telas menores */
+                gap: 40px;
+                padding: 40px 30px;
+            }
+            img {
+                width: 220px; /* Diminui a imagem em telas menores */
+            }
+            button {
+                font-size: 1.2em; /* Diminui a fonte do botão */
+                padding: 15px 35px;
+            }
+        }
